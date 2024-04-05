@@ -29,9 +29,9 @@ const __dirname = path.resolve();
 app.use(
   helmet.contentSecurityPolicy({
     directives: {
-      defaultSrc: ["'self'"],
+      defaultSrc: ["'self'", 'https://social-gjpw.onrender.com/'],
       // Add more directives as needed, such as:
-      // connectSrc: ["'self'", "http://localhost:3001"],
+       connectSrc: ["'self'", "https://social-gjpw.onrender.com/"],
     },
   })
 );
